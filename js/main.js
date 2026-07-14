@@ -26,6 +26,7 @@
     if (!header || !toggle) return;
     header.classList.remove("nav-open");
     toggle.setAttribute("aria-expanded", "false");
+    toggle.setAttribute("aria-label", "Open menu");
     if (!dialog?.open) doc.style.overflow = "";
   };
 
@@ -33,6 +34,7 @@
     if (!header || !toggle) return;
     header.classList.add("nav-open");
     toggle.setAttribute("aria-expanded", "true");
+    toggle.setAttribute("aria-label", "Close menu");
     doc.style.overflow = "hidden";
   };
 
